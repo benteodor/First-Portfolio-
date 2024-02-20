@@ -73,6 +73,62 @@ li a:hover {
   scale: 0.95;
 }
 
+.about-section {
+  background: url("image\ middle.jpeg") no-repeat left;
+  background-size: 55%;
+  background-color: #fdfdfd;
+  overflow: hidden;
+  padding: 100px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.inner-container {
+  width: 50%;
+  float: right;
+  background-color: #fdfdfd;
+  padding: 100px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.text {
+  font-size: 13px;
+  color: #545454;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.skills-section {
+  background: url("image\ middle.jpeg") no-repeat right;
+  background-size: 55%;
+  background-color: #fdfdfd;
+  overflow: hidden;
+  padding: 100px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.skills-container {
+  width: 50%;
+  float: left;
+  background-color: #fdfdfd;
+  padding: 100px;
+}
+
+.skills-text {
+  font-size: 13px;
+  color: #545454;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
 .container {
   position: relative;
   display: flex;

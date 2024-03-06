@@ -5,6 +5,29 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#btnScrollToTop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: orange;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#btnScrollToTop:active {
+  background-color: #cc2333;
+}
+
 nav {
   width: 100%;
   display: flex;
@@ -96,6 +119,13 @@ h1 {
   font-weight: 900;
 }
 
+.skills-h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+  margin-top: -30px;
+}
+
 .text {
   font-size: 13px;
   color: #545454;
@@ -104,8 +134,114 @@ h1 {
   margin-bottom: 40px;
 }
 
-.skills-section {
-  background: url("image\ middle.jpeg") no-repeat right;
+.container-skills {
+  height: 100vh;
+  background: url("skills.jpeg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills h2 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  color: black;
+  font-size: 16px;
+}
+
+.progress-bar {
+  background-color: #959595;
+  width: 600px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.progress-bar div {
+  height: 10px;
+  border-radius: 5px;
+  width: 0%;
+}
+
+.progress-bar div span {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #222;
+  float: right;
+  margin-top: -15px;
+  margin-right: -20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.html {
+  background-color: #fff;
+  animation: html 1s linear forwards;
+}
+
+.css {
+  background-color: #fff;
+  animation: css 1s linear forwards;
+}
+
+.javascript {
+  background-color: #fff;
+  animation: javascript 1s linear forwards;
+}
+
+.php {
+  background-color: #fff;
+  animation: php 1s linear forwards;
+}
+
+.html span {
+  border: 1px solid #fff;
+}
+
+.css span {
+  border: 1px solid #fff;
+}
+
+.javascript span {
+  border: 1px solid #fff;
+}
+
+.php span {
+  border: 1px solid #fff;
+}
+
+@keyframes html {
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes css {
+  100% {
+    width: 85%;
+  }
+}
+
+@keyframes javascript {
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes php {
+  100% {
+    width: 40%;
+  }
+}
+
+/*.skills-section {
+  background: url("skills3.jpeg") no-repeat right;
   background-size: 55%;
   background-color: #fdfdfd;
   overflow: hidden;
@@ -119,14 +255,39 @@ h1 {
   float: left;
   background-color: #fdfdfd;
   padding: 100px;
-}
+}*/
 
-.skills-text {
+/*.skills-text {
   font-size: 13px;
   color: #545454;
   line-height: 30px;
   text-align: justify;
   margin-bottom: 40px;
+}*/
+
+.projects-section {
+  background: url("projects.jpeg") no-repeat left;
+  background-size: 55%;
+  background-color: #fdfdfd;
+  overflow: hidden;
+  padding: 100px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.projects-container {
+  width: 50%;
+  float: right;
+  background-color: #fdfdfd;
+  padding: 100px;
+}
+
+.projects-text {
+  font-size: 13px;
+  color: #545454;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 20px;
 }
 
 .container {

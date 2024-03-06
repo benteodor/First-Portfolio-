@@ -6,6 +6,10 @@
     <title>Portfolio Teo</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
@@ -17,47 +21,66 @@
       <a href="#logo">Portfolio</a>
       <ul>
         <li>
-          <a href="#Home">Home</a>
-          <a href="#About">About</a>
-          <a href="#Skills">Skills</a>
-          <a href="#Projects">Projects</a>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
         </li>
       </ul>
-      <a href="Contact" class="head-btn">Contact</a>
+      <a href="#contact" class="head-btn">Contact</a>
     </nav>
-    <header></header>
-    <div class="about-section">
-      <div class="inner-container">
-        <h1>About Me</h1>
-        <p class="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-          quidem facilis a porro commodi, possimus dolore optio sequi minus nam?
-          Natus eos architecto odio eveniet fugit sapiente deleniti molestiae
-          iure? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Maiores pariatur deleniti officiis magni inventore incidunt
-          repellendus tempora dolorum, nam ipsa quae, nostrum earum. Alias sunt
-          ad ab eos doloribus numquam. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Totam nesciunt consequuntur repellat accusamus
-          pariatur a ullam eum labore at sed quaerat, tenetur doloribus odio
-          nihil repellendus consectetur sint quod inventore.
-        </p>
+    <header>
+      <article class="section1" id="home"></article>
+    </header>
+    <article class="section2" id="about">
+      <div class="about-section">
+        <div class="inner-container">
+          <h1 class="about">About Me</h1>
+          <p class="text">
+            I consider myself a hardworking individual that is constantly
+            willing to embark on new challenges. I have developed a wide range
+            of skills in various areas of knowledge, and I am ready to take on
+            any challenge. Currently, I am learning to become a Full Stack
+            Developer.
+          </p>
+        </div>
+      </div>
+    </article>
+    <article class="section3" id="skills"></article>
+    <div class="container-skills">
+      <div class="skills">
+        <h1 class="skills-h1">Skills</h1>
+        <h2>HTML</h2>
+        <div class="progress-bar">
+          <div class="html"><span>90%</span></div>
+        </div>
+        <h2>CSS</h2>
+        <div class="progress-bar">
+          <div class="css"><span>85%</span></div>
+        </div>
+        <h2>JavaScript</h2>
+        <div class="progress-bar">
+          <div class="javascript"><span>60%</span></div>
+        </div>
+        <h2>PHP</h2>
+        <div class="progress-bar">
+          <div class="php"><span>40%</span></div>
+        </div>
       </div>
     </div>
-    <div class="skills-section">
-      <div class="skills-container">
-        <h1>Skills</h1>
-        <p class="skills-text">
-          These are the technologies I've worked with. Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Ut velit tenetur dicta rerum
-          dolorum aspernatur officiis, excepturi quam laborum corrupti? Dolorum
-          vel ex provident rerum laboriosam assumenda magni, aspernatur
-          temporibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Maiores esse vero eligendi. Quas ut consectetur aperiam vel
-          perspiciatis nihil, a aut maiores corrupti, culpa deleniti officia ad
-          libero officiis dolorum.
-        </p>
+    <article class="section4" id="projects">
+      <div class="projects-section">
+        <div class="projects-container">
+          <h1>Projects</h1>
+          <p class="projects-text">
+            Have a look at my
+            <a href="https://github.com/benteodor" target="_blank">GitHub</a
+            ><placeholder></placeholder> account.
+          </p>
+        </div>
       </div>
-    </div>
+    </article>
+    <article class="section5" id="contact"></article>
     <div class="container">
       <div class="contact-box">
         <div class="left"></div>
@@ -71,6 +94,9 @@
         </div>
       </div>
     </div>
+    <button id="btnScrollToTop">
+      <span class="material-symbols-outlined"> arrow_upward </span>
+    </button>
   </body>
   <script src="main.js"></script>
 </html>

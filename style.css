@@ -69,6 +69,7 @@ nav a {
   letter-spacing: 1px;
   text-decoration: none;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 li a:hover {
@@ -382,4 +383,16 @@ h2:after {
   transition: 0.3s;
   border-radius: 20px;
   padding: 0.5rem 5rem;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: burlywood;
+  height: 100px;
+  padding: 20px 50px;
+  flex-direction: column;
 }

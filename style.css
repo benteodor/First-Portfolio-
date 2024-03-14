@@ -103,8 +103,7 @@ li a:hover {
   background-color: #fdfdfd;
   overflow: hidden;
   padding: 100px 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .inner-container {
@@ -132,7 +131,6 @@ h1 {
   color: #545454;
   line-height: 30px;
   text-align: justify;
-  margin-bottom: 40px;
 }
 
 .container-skills {
@@ -143,6 +141,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 0px;
 }
 
 .skills h2 {
@@ -241,39 +240,13 @@ h1 {
   }
 }
 
-/*.skills-section {
-  background: url("skills3.jpeg") no-repeat right;
-  background-size: 55%;
-  background-color: #fdfdfd;
-  overflow: hidden;
-  padding: 100px 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.skills-container {
-  width: 50%;
-  float: left;
-  background-color: #fdfdfd;
-  padding: 100px;
-}*/
-
-/*.skills-text {
-  font-size: 13px;
-  color: #545454;
-  line-height: 30px;
-  text-align: justify;
-  margin-bottom: 40px;
-}*/
-
 .projects-section {
   background: url("projects.jpeg") no-repeat left;
   background-size: 55%;
   background-color: #fdfdfd;
   overflow: hidden;
   padding: 100px 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .projects-container {
@@ -288,7 +261,7 @@ h1 {
   color: #545454;
   line-height: 30px;
   text-align: justify;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .container {
@@ -385,14 +358,96 @@ h2:after {
   padding: 0.5rem 5rem;
 }
 
-footer {
+.footer {
   position: relative;
+  width: 100%;
+  background-color: burlywood;
+  min-height: 100px;
+  padding: 20px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  background-color: burlywood;
-  height: 100px;
-  padding: 20px 50px;
   flex-direction: column;
+  margin-bottom: 0px;
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  margin: 0 10px;
+  display: inline-block;
+  opacity: 0.55;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.menu__link:hover {
+  opacity: 1;
+  color: black;
+}
+
+.footer p {
+  color: rgba(0, 0, 0, 0.7);
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url(wave.svg);
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
 }

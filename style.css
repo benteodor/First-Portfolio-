@@ -127,7 +127,7 @@ h1 {
 }
 
 .text {
-  font-size: 13px;
+  font-size: 18 px;
   color: #545454;
   line-height: 30px;
   text-align: justify;
@@ -257,11 +257,21 @@ h1 {
 }
 
 .projects-text {
-  font-size: 13px;
+  font-size: 18px;
   color: #545454;
   line-height: 30px;
   text-align: justify;
   margin-bottom: 0px;
+}
+
+.projects-text a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.projects-text a:hover {
+  color: orange;
 }
 
 .container {

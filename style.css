@@ -461,3 +461,75 @@ h2:after {
     background-positon-x: 0px;
   }
 }
+
+/* Hamburger Menu Styles */
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  cursor: pointer;
+  padding: 20px;
+  display: inline-block;
+}
+
+.nav-toggle-label span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-toggle:checked + nav .nav-links {
+  display: block;
+}
+
+/* Style for mobile */
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin-bottom: 10px;
+  }
+
+  .nav-toggle-label span:first-child {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .nav-toggle-label span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle-label span:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-toggle:checked + .nav-toggle-label span:first-child {
+    transform: translateY(0) rotate(45deg);
+  }
+
+  .nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
+    opacity: 1;
+  }
+
+  .nav-toggle:checked + .nav-toggle-label span:last-child {
+    transform: translateY(0) rotate(-45deg);
+  }
+}
